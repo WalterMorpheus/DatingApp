@@ -19,10 +19,6 @@ public class AppUser
     public string City { get; set; }
     public string Country { get; set; }
     public List<Photo> Photos { get; set; } = new();
-
-
-    /*public int GetAge()
-    {
-        return DateOfBirth.CalcuateAge();
-    }*/
+    public List<UserLike> LikedByUser {get;set;}
+    public List<UserLike> LikedUsers {get;set;}
 }
